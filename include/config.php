@@ -17,7 +17,15 @@
 	global $_config['ftp']['host'] = "";
 	global $_config['ftp']['port'] = '21';
 	global $_config['cookie']['domain'] = '';
-	global $_config['cookie']['path'] = '';
 	global $_config['crawler']['limitTime'] = 0;
-	global $_config['crawler']['7']
+	global $_config['crawler']['locale'] = 'fa_IR';
+	global $_config['crawler']['max_depth'] = 3;
+	global $_config['crawler']['key_disable_key'] = false;
+	global $_config['crawler']['max_url_len'] = 1024;
+	global $_config['crawler']['allow_ext'] = array('html', 'txt', 'htm', 'xhtml', 'php', 'asp');;
+	global $_config['crawler']['max_url_content'] = 512*1024;
+	global $_config['crawler']['thread_sleep_time'] = 100000;
+	global $_config['crawler']['char_per_word'] = 3;
+	
+	
 ?>
