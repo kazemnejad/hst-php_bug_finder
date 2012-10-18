@@ -1,5 +1,5 @@
 <?php
-	include "../config.php";
+	require_once "../config.php";
 	class db_engine{
 		//variable
 		private $host;
@@ -16,7 +16,7 @@
 		private function connect(){
 			mysql_connect($host,$user,$pass) or die("Unable to connect database");
 		}
-		private function query($query){
+		public function query($query){
 			this->connect();
 			mysql_escape_string($query);
 			if(mysql_query($query)){
